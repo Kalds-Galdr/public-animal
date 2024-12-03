@@ -56,8 +56,6 @@ p {
 	margin-right: auto;
 	padding: 20px;
 	max-width: 1000px;
-	position: relative;
-	box-shadow: 0 0 0 10px #7B3539, 0 0 0 20px transparent;
 }
 
 /* Flexbox für die zentrale Ausrichtung und dynamische Größe des Logos */
