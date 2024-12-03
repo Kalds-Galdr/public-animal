@@ -1,128 +1,103 @@
 body {
-	background-image: url('apokalyptischeReiterDürer.jpg');
-	background-size: cover; /* Bild füllt den Hintergrund aus */
-	background-position: center; /* Bild bleibt zentriert */
-	font-family: sans-serif;
-	margin: 0;
-	padding: 20px;
-	box-sizing: border-box;
+  background-image: url('apokalyptischeReiterDürer.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 hr {
-	margin-top: 30px;
-	margin-bottom: 30px;
-	height: 2px;
-	background-color: black;
-	border-color: black;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 2px;
+  background-color: black;
+  border-color: black;
 }
 
 h1, h2, p {
-	text-align: center;
+  text-align: center;
 }
 
 h1 {
-	font-size: 36px;
+  font-size: 36px;
 }
 
 p {
-	font-size: 28px;
+  font-size: 28px;
 }
 
 .established {
-	font-style: italic;
+  font-style: italic;
 }
 
 .item p {
-	display: inline-block;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	font-size: 18px;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
 }
 
 .uberschrift {
-	text-align: left;
-	width: 100%; /* Breite auf 100% ändern */
+  text-align: left;
+  width: 75%;
+}
+
+.link {
+  text-align: right;
+  width: 60%;
 }
 
 .names {
-	text-align: center;
+  text-align: center;
 }
 
 .allgemein {
-	width: 80%;
-	background-color: #7B3539;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 20px;
-	max-width: 1000px;
-}
-
-/* Bilder anpassen */
-.responsive-img {
-	width: 100%;
-	max-width: 400px; /* Sicherstellen, dass Bilder nicht zu groß werden */
-	height: auto;
-	display: block;
-	margin-left: auto;
-	margin-right: auto; /* Zentrieren des Logos */
-}
-
-.icon-img {
-	width: 50px; /* Größe des Icons */
-	height: auto;
+  width: 80%;
+  background-color: #7B3539;
+  margin: 0 auto; /* Fixiert das Zentrieren */
+  padding: 20px;
+  max-width: 1000px;
 }
 
 /* Media Queries für verschiedene Bildschirmgrößen */
-
-/* Für Bildschirme kleiner als 768px (z.B. Tablets und Smartphones) */
 @media (max-width: 768px) {
-	h1 {
-		font-size: 28px;
-	}
+  h1 {
+    font-size: 28px;
+  }
 
-	p {
-		font-size: 18px;
-	}
+  p {
+    font-size: 18px;
+  }
 
-	.allgemein {
-		width: 90%;
-	}
+  .allgemein {
+    width: 90%; /* Breite auf 90% der Bildschirmgröße anpassen */
+  }
 
-	/* Bild auf kleineren Geräten anpassen */
-	.responsive-img {
-		width: 100%;
-		max-width: 400px;
-		height: auto;
-	}
+  /* Bild auf kleineren Geräten anpassen */
+  img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
 }
 
-/* Für Bildschirme kleiner als 480px (z.B. Smartphones im Hochformat) */
 @media (max-width: 480px) {
-	h1 {
-		font-size: 24px;
-	}
+  h1 {
+    font-size: 24px;
+  }
 
-	p {
-		font-size: 16px;
-	}
+  p {
+    font-size: 16px;
+  }
 
-	.allgemein {
-		width: 95%;
-	}
+  .allgemein {
+    width: 95%; /* Etwas breiter für noch kleinere Geräte */
+  }
 
-	/* Verkleinerte Bilder und Flexbox-Layout für sehr kleine Bildschirme */
-	.responsive-img {
-		width: 100%;
-		max-width: 300px;
-		height: auto;
-	}
-
-	.icon-img {
-		width: 40px; /* Icon-Größe anpassen */
-	}
-}
-
-/* Rechtsbündiger Text für "3=====D" */
-.song-text {
-	text-align: right; /* Text rechtsbündig */
+  .logo-container {
+    width: 100%;
+    text-align: center;
+  }
 }
