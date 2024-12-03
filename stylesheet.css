@@ -13,7 +13,7 @@ hr {
 }
 
 h1 {
-	font-size: 36px;
+	font-size: 46px;
 	font-family: 'luftwaffe', sans-serif;
 }
 
@@ -23,7 +23,7 @@ h1, h2, p {
 }
 
 p {
-	font-size: 28px;
+	font-size: 38px;
 	font-family: 'luftwaffe', sans-serif;
 }
 
@@ -35,7 +35,7 @@ p {
 	display: inline-block;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	font-size: 18px;
+	font-size: 28px;
 }
 
 .uberschrift {
