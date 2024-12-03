@@ -1,0 +1,52 @@
+body{
+	background-image: url(https://i.pinimg.com/originals/21/32/8a/21328a8c712c9548bcfec8b9fdcb26a1.jpg);
+	font-family: sans-serif;
+	padding: 20px;
+}
+hr {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	height: 2px;
+	background-color: black;
+	border-color: black;
+}
+h1{
+	font-size: 36px;
+}
+h1, h2, p {
+	text-align: center;
+}
+p{
+	font-size: 28px;
+}
+.established{
+	font-style: italic;
+} 
+.item p{
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+
+.uberschrift{
+	text-align: left;
+	width: 75%;
+}
+
+.link{
+	text-align: right;
+	width: 60%;
+}
+
+.names {
+	text-align: center;
+}
+.allgemein{
+	width: 80%;
+	background-color: #7B3539;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	max-width: 1000px;
+}
