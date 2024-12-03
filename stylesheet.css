@@ -117,3 +117,8 @@ p {
 		width: 40px; /* Icon-Größe anpassen */
 	}
 }
+
+/* Für den rechten Text (3=====D) */
+.song-text {
+	text-align: right; /* Text rechtsbündig */
+}
