@@ -1,4 +1,4 @@
-body{
+body {
 	background-image: url('apokalyptischeReiterDürer.jpg');
 	font-family: sans-serif;
 	padding: 20px;
@@ -12,7 +12,7 @@ hr {
 	border-color: black;
 }
 
-h1{
+h1 {
 	font-size: 36px;
 }
 
@@ -20,27 +20,27 @@ h1, h2, p {
 	text-align: center;
 }
 
-p{
+p {
 	font-size: 28px;
 }
 
-.established{
+.established {
 	font-style: italic;
 }
 
-.item p{
+.item p {
 	display: inline-block;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	font-size: 18px;
 }
 
-.uberschrift{
+.uberschrift {
 	text-align: left;
 	width: 75%;
 }
 
-.link{
+.link {
 	text-align: right;
 	width: 60%;
 }
@@ -49,7 +49,7 @@ p{
 	text-align: center;
 }
 
-.allgemein{
+.allgemein {
 	width: 80%;
 	background-color: #7B3539;
 	margin-left: auto;
@@ -58,9 +58,15 @@ p{
 	max-width: 1000px;
 }
 
-/* Logo Styling */
+/* Flexbox für die zentrale Ausrichtung und dynamische Größe des Logos */
+.logo-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
 .allgemein img {
-    width: 100%; /* Logo nimmt 100% der Breite des Containers ein */
-    max-width: 400px; /* Maximale Breite für das Logo, um es nicht zu groß zu machen */
-    height: auto; /* Höhe wird automatisch angepasst, um das Seitenverhältnis zu wahren */
+	width: 100%;  /* Bild nimmt 100% der Breite des Containers ein */
+	max-width: 400px; /* Maximale Breite für das Logo, damit es nicht zu groß wird */
+	height: auto; /* Höhe wird automatisch angepasst, um das Seitenverhältnis zu wahren */
 }
