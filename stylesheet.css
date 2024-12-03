@@ -1,6 +1,6 @@
 body {
 	background-image: url('apokalyptischeReiterDürer.jpg');
-	font-family: sans-serif;
+	font-family: 'luftwaffe', sans-serif;
 	padding: 20px;
 }
 
@@ -14,14 +14,17 @@ hr {
 
 h1 {
 	font-size: 36px;
+	font-family: 'luftwaffe', sans-serif;
 }
 
 h1, h2, p {
 	text-align: center;
+	font-family: 'luftwaffe', sans-serif;
 }
 
 p {
 	font-size: 28px;
+	font-family: 'luftwaffe', sans-serif;
 }
 
 .established {
@@ -56,6 +59,11 @@ p {
 	margin-right: auto;
 	padding: 20px;
 	max-width: 1000px;
+}
+
+@font-face {
+    font-family: 'luftwaffe';
+    src: url('luftwaffe.ttf') format('truetype'); /* Update the path as needed */
 }
 
 
