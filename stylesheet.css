@@ -59,22 +59,25 @@ p {
 }
 
 .freeborder{
-	width: 70%;
+	background-color: transparent; /* Hintergrund transparent */
+	padding: 20px;
+	border: 10px solid transparent;
+	/*width: 70%;
 	background: background;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px;
-	max-width: 900px;
+	max-width: 900px;*/
 }
 
-.innerbox {
+/*.innerbox {
 	width: 60%;
 	background: background;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px;
 	max-width: 800px;
-}
+}*/
 
 /* Flexbox für die zentrale Ausrichtung und dynamische Größe des Logos */
 .logo-container {
