@@ -3,6 +3,7 @@ body{
 	font-family: sans-serif;
 	padding: 20px;
 }
+
 hr {
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -10,18 +11,23 @@ hr {
 	background-color: black;
 	border-color: black;
 }
+
 h1{
 	font-size: 36px;
 }
+
 h1, h2, p {
 	text-align: center;
 }
+
 p{
 	font-size: 28px;
 }
+
 .established{
 	font-style: italic;
-} 
+}
+
 .item p{
 	display: inline-block;
 	margin-top: 5px;
@@ -42,6 +48,7 @@ p{
 .names {
 	text-align: center;
 }
+
 .allgemein{
 	width: 80%;
 	background-color: #7B3539;
@@ -49,4 +56,11 @@ p{
 	margin-right: auto;
 	padding: 20px;
 	max-width: 1000px;
+}
+
+/* Logo Styling */
+.allgemein img {
+    width: 100%; /* Logo nimmt 100% der Breite des Containers ein */
+    max-width: 400px; /* Maximale Breite für das Logo, um es nicht zu groß zu machen */
+    height: auto; /* Höhe wird automatisch angepasst, um das Seitenverhältnis zu wahren */
 }
