@@ -1,13 +1,15 @@
+/* Grundlegendes Styling für den Body */
 body {
   background-image: url('apokalyptischeReiterDürer.jpg');
-  background-size: cover;
-  background-position: center;
+  background-size: cover; /* Bild füllt den Hintergrund aus */
+  background-position: center; /* Bild bleibt zentriert */
   font-family: sans-serif;
   margin: 0;
   padding: 20px;
   box-sizing: border-box;
 }
 
+/* Styling für horizontale Linien */
 hr {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -16,6 +18,7 @@ hr {
   border-color: black;
 }
 
+/* Allgemeines Styling für Überschriften und Absätze */
 h1, h2, p {
   text-align: center;
 }
@@ -28,10 +31,12 @@ p {
   font-size: 28px;
 }
 
+/* Styling für die Etablierungsinformation */
 .established {
   font-style: italic;
 }
 
+/* Styling für die Namen */
 .item p {
   display: inline-block;
   margin-top: 5px;
@@ -39,6 +44,7 @@ p {
   font-size: 18px;
 }
 
+/* Styling für die Überschrift der Songs */
 .uberschrift {
   text-align: left;
   width: 75%;
@@ -49,19 +55,28 @@ p {
   width: 60%;
 }
 
+/* Styling für die Namen der Bandmitglieder */
 .names {
   text-align: center;
 }
 
+/* Styling für den Hauptcontainer */
 .allgemein {
   width: 80%;
   background-color: #7B3539;
-  margin: 0 auto; /* Fixiert das Zentrieren */
+  margin: 0 auto; /* Zentriert den Container */
   padding: 20px;
   max-width: 1000px;
 }
 
+/* Container für das Logo, um es zu zentrieren */
+.logo-container {
+  text-align: center;
+}
+
 /* Media Queries für verschiedene Bildschirmgrößen */
+
+/* Für Bildschirme kleiner als 768px (z.B. Tablets und Smartphones) */
 @media (max-width: 768px) {
   h1 {
     font-size: 28px;
@@ -72,7 +87,7 @@ p {
   }
 
   .allgemein {
-    width: 90%; /* Breite auf 90% der Bildschirmgröße anpassen */
+    width: 90%; /* Container auf 90% der Bildschirmbreite anpassen */
   }
 
   /* Bild auf kleineren Geräten anpassen */
@@ -81,8 +96,13 @@ p {
     max-width: 400px;
     height: auto;
   }
+
+  .item p {
+    font-size: 16px;
+  }
 }
 
+/* Für sehr kleine Bildschirme (z.B. Smartphones im Hochformat) */
 @media (max-width: 480px) {
   h1 {
     font-size: 24px;
@@ -93,11 +113,12 @@ p {
   }
 
   .allgemein {
-    width: 95%; /* Etwas breiter für noch kleinere Geräte */
+    width: 95%; /* Container auf 95% der Bildschirmbreite anpassen */
   }
 
-  .logo-container {
+  .logo-container img {
     width: 100%;
-    text-align: center;
+    max-width: 300px;
+    height: auto;
   }
 }
