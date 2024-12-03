@@ -1,124 +1,52 @@
-/* Grundlegendes Styling für den Body */
-body {
-  background-image: url('apokalyptischeReiterDürer.jpg');
-  background-size: cover; /* Bild füllt den Hintergrund aus */
-  background-position: center; /* Bild bleibt zentriert */
-  font-family: sans-serif;
-  margin: 0;
-  padding: 20px;
-  box-sizing: border-box;
+body{
+	background-image: url('apokalyptischeReiterDürer.jpg');
+	font-family: sans-serif;
+	padding: 20px;
 }
-
-/* Styling für horizontale Linien */
 hr {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  height: 2px;
-  background-color: black;
-  border-color: black;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	height: 2px;
+	background-color: black;
+	border-color: black;
 }
-
-/* Allgemeines Styling für Überschriften und Absätze */
+h1{
+	font-size: 36px;
+}
 h1, h2, p {
-  text-align: center;
+	text-align: center;
+}
+p{
+	font-size: 28px;
+}
+.established{
+	font-style: italic;
+} 
+.item p{
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 18px;
 }
 
-h1 {
-  font-size: 36px;
+.uberschrift{
+	text-align: left;
+	width: 75%;
 }
 
-p {
-  font-size: 28px;
+.link{
+	text-align: right;
+	width: 60%;
 }
 
-/* Styling für die Etablierungsinformation */
-.established {
-  font-style: italic;
-}
-
-/* Styling für die Namen */
-.item p {
-  display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 18px;
-}
-
-/* Styling für die Überschrift der Songs */
-.uberschrift {
-  text-align: left;
-  width: 75%;
-}
-
-.link {
-  text-align: right;
-  width: 60%;
-}
-
-/* Styling für die Namen der Bandmitglieder */
 .names {
-  text-align: center;
+	text-align: center;
 }
-
-/* Styling für den Hauptcontainer */
-.allgemein {
-  width: 80%;
-  background-color: #7B3539;
-  margin: 0 auto; /* Zentriert den Container */
-  padding: 20px;
-  max-width: 1000px;
-}
-
-/* Container für das Logo, um es zu zentrieren */
-.logo-container {
-  text-align: center;
-}
-
-/* Media Queries für verschiedene Bildschirmgrößen */
-
-/* Für Bildschirme kleiner als 768px (z.B. Tablets und Smartphones) */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 28px;
-  }
-
-  p {
-    font-size: 18px;
-  }
-
-  .allgemein {
-    width: 90%; /* Container auf 90% der Bildschirmbreite anpassen */
-  }
-
-  /* Bild auf kleineren Geräten anpassen */
-  img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-  }
-
-  .item p {
-    font-size: 16px;
-  }
-}
-
-/* Für sehr kleine Bildschirme (z.B. Smartphones im Hochformat) */
-@media (max-width: 480px) {
-  h1 {
-    font-size: 24px;
-  }
-
-  p {
-    font-size: 16px;
-  }
-
-  .allgemein {
-    width: 95%; /* Container auf 95% der Bildschirmbreite anpassen */
-  }
-
-  .logo-container img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-  }
+.allgemein{
+	width: 80%;
+	background-color: #7B3539;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	max-width: 1000px;
 }
