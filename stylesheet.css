@@ -12,32 +12,47 @@ hr {
 	border-color: black;
 }
 /*ab hier */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #111;
-}
-li {
-  float: left;
+/* Basic Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+/* Navigation Bar */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox for layout */
+    justify-content: space-evenly; /* Equal spacing between items */
+    align-items: center; /* Vertically center items */
+    background-color: #333;
 }
 
-li a:hover:not(.active) {
-  background-color: #111;
+/* Navigation Links */
+.navbar li {
+    display: inline-block; /* Ensure items are horizontal */
 }
 
-.active {
-  background-color: #04AA6D;
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Smooth hover effect */
 }
+
+/* Hover effect for links */
+.navbar li a:hover:not(.active) {
+    background-color: #111;
+}
+
+/* Active link styling */
+.navbar li .active {
+    background-color: #04AA6D;
+}
+
 /*bis hierhin is der code neu*/
 h1 {
 	font-size: 46px;
