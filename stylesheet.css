@@ -41,12 +41,7 @@ p {
 
 .uberschrift {
 	text-align: left;
-	width: 75%;
-}
-
-.link {
-	text-align: right;
-	width: 60%;
+	width: 100%; /* Breite auf 100% ändern */
 }
 
 .names {
@@ -60,6 +55,17 @@ p {
 	margin-right: auto;
 	padding: 20px;
 	max-width: 1000px;
+}
+
+.responsive-img {
+	width: 100%;
+	max-width: 400px; /* Sicherstellen, dass Bilder nicht zu groß werden */
+	height: auto;
+}
+
+.icon-img {
+	width: 50px; /* Größe des Icons */
+	height: auto;
 }
 
 /* Media Queries für verschiedene Bildschirmgrößen */
@@ -79,7 +85,7 @@ p {
 	}
 
 	/* Bild auf kleineren Geräten anpassen */
-	img {
+	.responsive-img {
 		width: 100%;
 		max-width: 400px;
 		height: auto;
@@ -100,9 +106,14 @@ p {
 		width: 95%;
 	}
 
-	/* Bild noch weiter anpassen für sehr kleine Bildschirme */
-	.img-container {
+	/* Verkleinerte Bilder und Flexbox-Layout für sehr kleine Bildschirme */
+	.responsive-img {
 		width: 100%;
-		text-align: center;
+		max-width: 300px;
+		height: auto;
+	}
+
+	.icon-img {
+		width: 40px; /* Icon-Größe anpassen */
 	}
 }
