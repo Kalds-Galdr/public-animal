@@ -75,7 +75,7 @@ p {
 	width: 100%;
 }
 
-.allgemein img {
+.outerbox img {
 	width: 100%;  /* Bild nimmt 100% der Breite des Containers ein */
 	max-width: 400px; /* Maximale Breite für das Logo, damit es nicht zu groß wird */
 	height: auto; /* Höhe wird automatisch angepasst, um das Seitenverhältnis zu wahren */
