@@ -1,8 +1,7 @@
-/* Hintergrund und Basis-Styling */
 body {
 	background-image: url('apokalyptischeReiterDürer.jpg');
-	background-size: cover;
-	background-position: center;
+	background-size: cover; /* Bild füllt den Hintergrund aus */
+	background-position: center; /* Bild bleibt zentriert */
 	font-family: sans-serif;
 	margin: 0;
 	padding: 20px;
@@ -10,95 +9,100 @@ body {
 }
 
 hr {
-	margin: 30px 0;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	height: 2px;
 	background-color: black;
-	border: none;
+	border-color: black;
 }
 
-/* Text-Styling */
-h1 {
-	font-size: 2.5rem; /* Flexible Schriftgröße */
-	text-align: center;
-}
 h1, h2, p {
 	text-align: center;
 }
-p {
-	font-size: 1.2rem;
-	margin: 0.5rem 0;
+
+h1 {
+	font-size: 36px;
 }
+
+p {
+	font-size: 28px;
+}
+
 .established {
 	font-style: italic;
-	font-size: 1.5rem;
 }
 
-/* Layout */
-.allgemein {
-	width: 90%; /* Flexible Breite */
-	max-width: 1000px; /* Maximalbreite für große Bildschirme */
-	background-color: #7B3539;
-	margin: 0 auto;
-	padding: 20px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	border-radius: 10px;
+.item p {
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 18px;
 }
 
-/* Bilder */
-.responsive-img {
-	width: 100%;
-	max-width: 400px; /* Begrenzung der Bildgröße */
-	height: auto;
-	margin: 0 auto;
-	display: block;
-}
-
-.icon-img {
-	width: 54px;
-	height: auto;
-	vertical-align: middle;
-}
-
-/* Namen */
-.names {
-	text-align: center;
-	font-size: 1.2rem;
-	margin: 0.5rem 0;
-}
-
-/* Artikel */
-.item {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
 .uberschrift {
 	text-align: left;
 	width: 75%;
-	font-size: 1.5rem;
 }
+
 .link {
 	text-align: right;
 	width: 60%;
 }
 
-/* Responsive Design */
+.names {
+	text-align: center;
+}
+
+.allgemein {
+	width: 80%;
+	background-color: #7B3539;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	max-width: 1000px;
+}
+
+/* Media Queries für verschiedene Bildschirmgrößen */
+
+/* Für Bildschirme kleiner als 768px (z.B. Tablets und Smartphones) */
 @media (max-width: 768px) {
 	h1 {
-		font-size: 2rem;
+		font-size: 28px;
 	}
+
 	p {
-		font-size: 1rem;
+		font-size: 18px;
 	}
+
 	.allgemein {
-		padding: 15px;
+		width: 90%;
 	}
-	.uberschrift, .link {
+
+	/* Bild auf kleineren Geräten anpassen */
+	img {
 		width: 100%;
-		text-align: center;
+		max-width: 400px;
+		height: auto;
 	}
-	.item {
-		flex-direction: column;
+}
+
+/* Für Bildschirme kleiner als 480px (z.B. Smartphones im Hochformat) */
+@media (max-width: 480px) {
+	h1 {
+		font-size: 24px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	.allgemein {
+		width: 95%;
+	}
+
+	/* Bild noch weiter anpassen für sehr kleine Bildschirme */
+	.img-container {
+		width: 100%;
 		text-align: center;
 	}
 }
