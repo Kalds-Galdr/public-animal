@@ -49,13 +49,31 @@ p {
 	text-align: center;
 }
 
-.allgemein {
+.outerbox {
 	width: 80%;
 	background-color: #7B3539;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px;
 	max-width: 1000px;
+}
+
+.freeborder{
+	width: 70%;
+	background: background;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	max-width: 900px;
+}
+
+.innerbox {
+	width: 60%;
+	background: background;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	max-width: 800px;
 }
 
 /* Flexbox für die zentrale Ausrichtung und dynamische Größe des Logos */
