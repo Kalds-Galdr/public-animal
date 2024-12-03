@@ -58,17 +58,6 @@ p {
 	max-width: 1000px;
 }
 
-.freeborder{
-	background-color: transparent; /* Hintergrund transparent */
-	padding: 20px;
-	border: 10px solid transparent;
-	/*width: 70%;
-	background: background;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 20px;
-	max-width: 900px;*/
-}
 
 /*.innerbox {
 	width: 60%;
