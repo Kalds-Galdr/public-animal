@@ -56,19 +56,12 @@ p {
 	margin-right: auto;
 	padding: 20px;
 	max-width: 1000px;
-	border-sizing: border-box;
-	position: relative;
 }
 
 .freeborder{
-	width: 100%;
-	height: 100%;
-	padding: 20px; /* Abstand für den transparenten Zwischenraum */
-	background-color: #7B3539; /* Rote Farbe */
-	box-sizing: border-box;
-	border: 10px solid transparent; /* Transparenter äußerer Rand */
-	box-shadow: 0 0 0 10px #7B3539; /* Zweiter Rand */
-}
+	background-color: transparent; /* Hintergrund transparent */
+	padding: 20px;
+	border: 10px solid transparent;
 	/*width: 70%;
 	background: background;
 	margin-left: auto;
